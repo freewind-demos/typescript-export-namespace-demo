@@ -16,4 +16,7 @@ namespace User {
 const user = User.createUser('typescript');
 user.hello();
 
+const user2 = new User('react');
+user2.hello();
+
 
