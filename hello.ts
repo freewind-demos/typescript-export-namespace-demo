@@ -1,22 +1,7 @@
-class User {
-  constructor(private name: string) {
-  }
+import {a} from "./types/user";
 
-  hello() {
-    console.log(`Hello, ${this.name!}`);
-  }
+const user: a.b.User = {
+    username: 'freewind'
 }
 
-namespace User {
-  export function createUser(name: string): User {
-    return new User(name);
-  }
-}
-
-const user = User.createUser('typescript');
-user.hello();
-
-const user2 = new User('react');
-user2.hello();
-
-
+console.log(user);
